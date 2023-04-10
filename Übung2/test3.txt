@@ -1,4 +1,0 @@
-Firmenname = 
-Random firmaAdresse = 
-Random AdresseBankverbindung = 
-Sparkasse
