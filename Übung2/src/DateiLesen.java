@@ -15,6 +15,7 @@ public class DateiLesen {
 	
 	public static void main(String[] args) throws IOException {
 		
+		String tet;
 		Scanner sc = new Scanner(System.in);
 		
 		if(existertDatei(new File("test4.txt"))){
