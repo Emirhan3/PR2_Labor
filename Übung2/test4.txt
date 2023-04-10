@@ -1,0 +1,3 @@
+Firmenname = Random Firma
+Adresse = Random Adresse
+Bankverbindung = Sparkasse
