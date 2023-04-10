@@ -11,6 +11,7 @@ public class DateiLesen {
 	private static String firmenname;
 	private static String adresse;
 	private static String bankverbindung;
+	private int steuernummer;
 	
 	
 	public static void main(String[] args) throws IOException {
