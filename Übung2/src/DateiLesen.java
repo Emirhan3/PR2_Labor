@@ -23,6 +23,10 @@ public class DateiLesen {
 		this.bankverbindung = bankverbindung;
 		
 	}
+	
+	public DateiLesen() {
+		
+	}
 
 
 	public static void main(String[] args) throws IOException {
