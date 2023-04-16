@@ -1,0 +1,6 @@
+Benutzername = Emirhan
+Passwort = pw123
+Firmenname = Random Firma
+Adresse = Random Adresse
+Bankverbindung = Sparkasse
+Steuernummer = 23021
