@@ -18,6 +18,14 @@ public class DateiLesen {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("Benutzername eingeben: ");
+		String benutzername = sc.nextLine();
+		System.out.println("Passwort eingeben: ");
+		String passwort = sc.nextLine();
+		
+		System.out.println("Hallo "+ benutzername + "\n");
+		
+		
 		if(existertDatei(new File("test4.txt"))){
 			try(BufferedReader lesen = new BufferedReader(new FileReader("test4.txt"))) {
 				
@@ -62,7 +70,7 @@ public class DateiLesen {
 	public static boolean existertDatei(File f) throws IOException {
 		
 		if(f.exists()) {
-			System.out.println("Datei existiert");
+			System.out.println("Datei existiert mit den Inhalten: ");
 			return true;
 		}else {
 			System.out.println("Datei existiert nicht");
