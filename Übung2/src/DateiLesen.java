@@ -95,6 +95,11 @@ public class DateiLesen {
 			System.out.println(f + " erzeugt");
 			return false;
 	}
+			
+	}
+	
+	public static void firmenadresse(Firmenadresse ort) {
+		
 		
 		
 	}
