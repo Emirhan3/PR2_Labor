@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="11.0.10" class="java.beans.XMLDecoder">
+ <object class="Beispiel">
+  <void property="adresse">
+   <string>Random Adresse</string>
+  </void>
+  <void property="bankverbindung">
+   <string>Sparkasse</string>
+  </void>
+  <void property="firmenname">
+   <string>Random Firma</string>
+  </void>
+ </object>
 </java>
