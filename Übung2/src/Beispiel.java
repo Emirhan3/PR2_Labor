@@ -12,6 +12,10 @@ public class Beispiel {
 		this.adresse = adresse;
 		this.bankverbindung = bankverbindung;
 	}
+	
+	public Beispiel() {
+		
+	}
 
 
 	public String getFirmenname() {
