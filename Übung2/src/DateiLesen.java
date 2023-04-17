@@ -99,7 +99,7 @@ public class DateiLesen {
 			
 	}
 	
-	
+
 	public static String getFirmenname() {
 		return firmenname;
 	}
