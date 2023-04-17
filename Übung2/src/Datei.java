@@ -7,11 +7,18 @@ public class Datei {
 	private final int SATZLAENGE = 10;
 	private RandomAccessFile eineStammdatei;
 
+	
+	public Datei() {
+		
+	}
+	
+	
 	public void speichereSatz(String satz, int index) {
 		
 	}
 	
 	public String leseSatz(int index) {
+		return "";
 		
 	}
 	
@@ -24,7 +31,7 @@ public class Datei {
 	}
 	
 	public int gibAnzahlDatensaetze() {
-		
+		return 0;
 	}
 	
 	private void positioniereAufSatz(int index) {
@@ -32,7 +39,7 @@ public class Datei {
 	}
 	
 	private String readFixedString(int laenge) {
-		
+		return "";
 	}
 	
 	private void writeFixedString(String einDatensatz, int laenge) {
