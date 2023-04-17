@@ -18,13 +18,19 @@ public class Index {
 	}
 	
 	// Methoden
-	public void erzeugeEintrag(int schluessel, int index) throws IOException
+	public void erzeugeEintrag(int schluessel, int index) throws IOException, IndexNichtErlaubtException
 	{
+		
+		if(schluessel < 0 || schluessel > 9) {
+			throw new IndexNichtErlaubtException("Index muss innerhakb von Wertebereich 0-9 sein", schluessel);
+		}
 		/** Speichert zu einen Schluessel den zugehoerigen
 		 * Datensatz-Index in der indextabelle
 		 */
-		if(schluessel < MAX)
+		else if(schluessel < MAX) {
 			indextabelle[schluessel] = index;
+		}
+		
 		// Aktualisieren der Indexdatei,
 		// d. h. Abspeichern der Datei
 		aktualisiereIndexDatei(schluessel);

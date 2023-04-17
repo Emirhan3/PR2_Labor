@@ -2,9 +2,9 @@ import java.io.RandomAccessFile;
 
 public class Datei {
 	
+	private final int SATZLAENGE = 10;
 	private int aktuell;
 	private String dateiname = "Indexdatei.txt";
-	private final int SATZLAENGE = 10;
 	private RandomAccessFile eineStammdatei;
 
 	

@@ -1,11 +1,16 @@
+import java.io.IOException;
 
 public class IndexUI {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException, IndexNichtErlaubtException {
 
 		Index i = new Index();
 		
-		System.out.println(i);
+		
+		i.erzeugeEintrag(10, 3);
+		i.erzeugeEintrag(1, 4);
+	//  System.out.println(i.gibIndexZuSchluessel(2));
+		i.gibIndextabelleAus();
 		
 	}
 
