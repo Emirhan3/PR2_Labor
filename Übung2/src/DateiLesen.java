@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class DateiLesen {
 	
-	private static String datei = "test3.txt";
+	private static String datei = "test4.txt";
 	private static String benutzername;
 	private static String passwort;
 	private static String firmenname;

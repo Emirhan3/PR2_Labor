@@ -1,6 +1,0 @@
-Benutzername = Emirhan
-Passwort = pw
-Firmenname = Random Firma
-Adresse = Firmenadresse@c818063
-Bankverbindung = Sparkasse
-Steuernummer = 299292

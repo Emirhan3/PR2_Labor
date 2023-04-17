@@ -1,6 +1,0 @@
-Benutzername = Emirhan
-Passwort = pw
-Firmenname = Random Firma
-Adresse = Straße: Stra0e Hausnummer: 20 Postleitzahl: 68 Wohnort: Mannheim Land: Deutschland
-Bankverbindung = Sparkasse
-Steuernummer = 29202029
