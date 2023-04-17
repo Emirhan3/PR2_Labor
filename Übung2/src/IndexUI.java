@@ -7,7 +7,7 @@ public class IndexUI {
 		Index i = new Index();
 		
 		
-		i.erzeugeEintrag(10, 3);
+		i.erzeugeEintrag(3, 3);
 		i.erzeugeEintrag(1, 4);
 	//  System.out.println(i.gibIndexZuSchluessel(2));
 		i.gibIndextabelleAus();

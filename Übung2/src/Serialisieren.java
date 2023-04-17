@@ -8,7 +8,7 @@ public class Serialisieren {
 
 	public static void main(String[] args) {
 		
-		DateiLesen b1 = new DateiLesen("Random Firma", "Random Adresse", "Sparkasse");
+		DateiLesen b1 = new DateiLesen("Random Firma", "Sparkasse");
 		String datei = "Beispiel2.xml";
 		
 		try(XMLEncoder enc = new XMLEncoder(new FileOutputStream(datei))) {
@@ -22,7 +22,7 @@ public class Serialisieren {
 		try(XMLDecoder dec = new XMLDecoder(new FileInputStream(datei))) {
 			
 			DateiLesen neuB= (DateiLesen) dec.readObject();
-			System.out.println("Firmenname: "+ neuB.getFirmenname() + "\n Adresse: " + neuB.getAdresse() + "\n Bankverbindung: " + neuB.getBankverbindung());
+			System.out.println("Firmenname: "+ neuB.getFirmenname() + "\n Bankverbindung: " + neuB.getBankverbindung());
 			
 		}catch(IOException exception2) {
 			

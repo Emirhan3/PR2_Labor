@@ -8,18 +8,17 @@ import java.util.Scanner;
 
 public class DateiLesen {
 	
-	private static String datei = "test.txt";
+	private static String datei = "test3.txt";
 	private static String benutzername;
 	private static String passwort;
 	private static String firmenname;
-	private static String adresse;
+	private static Firmenadresse adresse;
 	private static String bankverbindung;
 	private static int steuernummer;
 	
-	public DateiLesen(String firmenname, String adresse, String bankverbindung) {
+	public DateiLesen(String firmenname, String bankverbindung) {
 		
 		this.firmenname = firmenname;
-		this.adresse = adresse;
 		this.bankverbindung = bankverbindung;
 		
 	}
@@ -31,6 +30,8 @@ public class DateiLesen {
 
 	public static void main(String[] args) throws IOException {
 		
+		
+		Firmenadresse f = new Firmenadresse("Stra0e", 20, 68, "Mannheim", "Deutschland");
 		Scanner sc = new Scanner(System.in);
 		
 		if(existertDatei(new File(datei))){
@@ -53,8 +54,8 @@ public class DateiLesen {
 			passwort = sc.nextLine();
 			System.out.print("Firmennamen eingeben: ");
 			firmenname = sc.nextLine();
-			System.out.println("Adresse eingeben: ");
-			adresse = sc.nextLine();
+			System.out.println("Adresse wurde schon im Konstruktor eingegeben ");
+			adresse = f;
 			System.out.println("Bankverbindung eingeben: ");
 			bankverbindung = sc.nextLine();
 			System.out.println("Steuernummer eingeben: ");
@@ -98,11 +99,6 @@ public class DateiLesen {
 			
 	}
 	
-	public static void firmenadresse(Firmenadresse ort) {
-		
-		
-		
-	}
 	
 	public static String getFirmenname() {
 		return firmenname;
@@ -111,16 +107,6 @@ public class DateiLesen {
 
 	public static void setFirmenname(String firmenname) {
 		DateiLesen.firmenname = firmenname;
-	}
-
-
-	public static String getAdresse() {
-		return adresse;
-	}
-
-
-	public static void setAdresse(String adresse) {
-		DateiLesen.adresse = adresse;
 	}
 
 
