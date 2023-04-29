@@ -1,3 +1,4 @@
+package AlteIndexverwaltung;
 import java.util.*;
 import java.io.*;
 
@@ -18,21 +19,26 @@ public class Index {
 	}
 	
 	// Methoden
-	public void erzeugeEintrag(int schluessel, int index) throws IOException
+	public void erzeugeEintrag(int schluessel, int index) throws IOException, IndexNichtErlaubtException
 	{
+		
+		if(schluessel < 0 || schluessel > 9) {
+			throw new IndexNichtErlaubtException("Index muss innerhakb von Wertebereich 0-9 sein", schluessel);
+		}
 		/** Speichert zu einen Schluessel den zugehoerigen
 		 * Datensatz-Index in der indextabelle
 		 */
-		if(schluessel < MAX)
+		else if(schluessel < MAX) {
 			indextabelle[schluessel] = index;
+		}
+		
 		// Aktualisieren der Indexdatei,
 		// d. h. Abspeichern der Datei
 		aktualisiereIndexDatei(schluessel);
 	}
 	
-	public int gibIndexZuSchluessel(int schluessel) throws InvalidIndexException
+	public int gibIndexZuSchluessel(int schluessel)
 	{
-		/*
 		// Gibt zu dem Schluessel den gefundenen
 		// Datensatz-Index zurueck
 		if(schluessel < MAX)
@@ -40,13 +46,6 @@ public class Index {
 		// oder -1, wenn Schluessel zu gross ist
 		else
 			return -1;
-		*/
-		
-		if(schluessel >= MAX || indextabelle[schluessel] == -1)
-			throw new InvalidIndexException(schluessel);
-		
-		return indextabelle[schluessel];
-
 	}
 	
 	public void ladeIndexDatei() throws IOException
@@ -67,7 +66,7 @@ public class Index {
 	public void speichereIndexDatei() throws IOException
 	{
 		/** Speichert die Indextabelle vollstaendig in einer Datei
-		 * Dies geschieht beim Beenden des Programs
+		 * Dies geschlieht beim beenden des Programs
 		 */
 		eineIndexDatei = new RandomAccessFile(dateiname, "rw");
 		for(int schluessel = 0; schluessel < MAX; schluessel++)

@@ -1,3 +1,4 @@
+package AlteIndexverwaltung;
 
 public class IndexNichtErlaubtException extends Exception{
 	
