@@ -8,10 +8,10 @@ public class IndexUI {
 		Index i = new Index();
 		
 		
-		i.erzeugeEintrag(3, 3);
-		i.erzeugeEintrag(1, 4);
-	  System.out.println(i.gibIndexZuSchluessel(1));
-		i.gibIndextabelleAus();
+//		i.erzeugeEintrag(2, 11);
+//		i.erzeugeEintrag(1, 4);
+//	    System.out.println(i.gibIndexZuSchluessel(1));
+//		i.gibIndextabelleAus();
 		
 	}
 
