@@ -1,7 +1,7 @@
 package AlteIndexverwaltung;
 import java.io.IOException;
 
-public class IndexUI {
+public class IndexMain {
 
 	public static void main(String[] args) throws IOException, IndexNichtErlaubtException {
 
