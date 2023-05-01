@@ -53,7 +53,7 @@ public class Datei {
 			aktuell = index * SATZLAENGE * Character.BYTES;
 			eineStammDatei.seek(aktuell);
 		}
-	}
+	} 
 	
 	private String readFixedString(int laenge) throws IOException
 	{	
