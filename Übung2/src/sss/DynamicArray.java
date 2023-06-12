@@ -2,7 +2,6 @@ package sss;
 import java.lang.reflect.Array;
 
 public class DynamicArray<E> {
-	
 	Class<E>   typeOfElement;
 	private E array[];
 	private int count;
