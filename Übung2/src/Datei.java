@@ -5,7 +5,7 @@ import java.io.RandomAccessFile;
 public class Datei {
 	private int aktuell;
 	private String dateiname = "Stammdatei.txt";
-	private int SATZLAENGE = 100;
+	private int SATZLAENGE = 100; 
 	private RandomAccessFile eineStammDatei;
 	
 	public Datei() { }
